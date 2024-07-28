@@ -1,0 +1,1051 @@
+@font-face {
+    font-family: Tangerine;
+    src: url('../font/Tangerine-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Prata;
+    src: url('../font/Prata-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Alice;
+    src: url('../font/Alice-Regular.ttf');
+    font-display: swap;
+}
+
+body {
+    font-family: 'Alice', serif;
+    color: black;
+}
+
+.dots {
+    width: 56px;
+    height: 26.9px;
+    background: radial-gradient(circle closest-side, black 90%, #0000) 0% 50%,
+    radial-gradient(circle closest-side, black 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, black 90%, #0000) 100% 50%;
+    background-size: calc(100%/3) 13.4px;
+    background-repeat: no-repeat;
+    animation: dots-7ar3yq 1.2s infinite linear;
+}
+
+@keyframes dots-7ar3yq {
+    20% {
+        background-position: 0% 0%, 50% 50%, 100% 50%;
+    }
+
+    40% {
+        background-position: 0% 100%, 50% 0%, 100% 50%;
+    }
+
+    60% {
+        background-position: 0% 50%, 50% 100%, 100% 0%;
+    }
+
+    80% {
+        background-position: 0% 50%, 50% 50%, 100% 100%;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 99;
+    color: white;
+    background-color: #000000;
+    backdrop-filter: blur(20px);
+    opacity: .9;
+    font-family: Tangerine;
+}
+
+.page-center {
+    justify-content: center;
+    align-items: center;
+}
+
+#popup {
+    background-image: url('../img/popup-desktop.jpg');
+    background-color: white;
+    background-size: cover;
+    background-position: right;
+    z-index: 10;
+    color: black;
+}
+
+#popup .container-fluid {
+    padding: 150px 20px;
+}
+
+#popup .row {
+    max-width: 600px;
+}
+
+#popup .name {
+    font-family: Tangerine;
+    font-size: 5rem;
+}
+
+#popup h4 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: black;
+}
+
+#popup h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: black;
+}
+
+#popup span {
+    font-size: 22px;
+}
+
+#popup p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn-open {
+    border-color: white;
+    color: white;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.btn-open:hover, .btn-open:focus {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(23, 23, 23, 0.5);
+}
+
+.panel-hide {
+    transform: translateY(-100%);
+    -webkit-transition: .3s ease-out !important;
+    -moz-transition: .3s ease-out !important;
+    -o-transition: .3s ease-out !important;
+    transition: .3s ease-out !important;
+}
+
+#header img {
+    padding: 0;
+    max-width: 100% !important;
+    width: 100vw !important;
+}
+
+.header-content {
+    color: white;
+    bottom: 20%;
+}
+
+.header-content .name {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+
+.and {
+    border-color: inherit !important;
+    padding: 5px 10px 0;
+    font-family: Alice;
+    font-size: 4rem;
+}
+
+#ayat {
+    padding: 100px 200px;
+}
+
+#wedding {
+    background-color: white;
+    border-radius: 50px;
+    width: 80%;
+    top: -15%;
+    left: 10%;
+    z-index: 2;
+}
+
+#wedding h3 {
+    margin-bottom: 0;
+
+}
+
+.wedding-content i {
+    font-size: 20px;
+}
+
+#wedding h1 {
+    font-size: 140px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 61px 0px;
+    vertical-align: middle;
+    color: #212B34;
+}
+
+#wedding .text-center span {
+    font-size: 34px;
+    line-height: 40px;
+    color: #212B34;
+    /* text-shadow: 2px 2px 15px rgb(0, 0, 0); */
+}
+
+.text-gold {
+    color: #000000;
+}
+
+.text-gold:hover, .text-gold:focus, .text-gold:active {
+    color: #70634c;
+}
+
+.text-invite {
+    font-size: 27px;
+}
+
+#wedding img {
+    width: 70%;
+    height: auto;
+}
+
+.wedding-content p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#saveDate {
+    background-color: #203C54;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 200px;
+}
+
+#saveDate::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../img/left.png'), url('../img/right.png');
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
+#saveDate::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/flower-left.png'), url('../img/flower-right.png');
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 500px;
+}
+
+#container-save {
+    padding-top: 500px;
+    color: white;
+}
+
+.save-detail {
+    z-index: 2;
+    color: white;
+}
+
+.card-save {
+    padding: 100px 200px;
+    color: white;
+}
+
+.save-title h2, #gallery .header h1, .col-story h1, .hastag {
+    font-family: Prata;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.save-detail h5 {
+    font-size: 22px;
+    margin: 0;
+    color: white;
+}
+
+.save-detail .day {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.save-detail .date {
+    font-size: 70px;
+    line-height: 30px;
+    color: white;
+}
+
+.save-detail .time {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.save-detail .line {
+    font-size: 48px;
+    line-height: 100%;
+    vertical-align: super;
+    color: white;
+}
+
+.save-detail .place {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: white;
+}
+
+.btn-map {
+    background-color: #203C54;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 1px 10px;
+    color: white;
+}
+
+.btn-map:hover {
+    background-color: white;
+    color: #203C54;
+}
+
+.btn-map:focus {
+    box-shadow: none;
+}
+
+#countdown .countdown_area .countdown_wrap {
+    padding-bottom: 36px;
+    padding-top: 30px;
+}
+
+#countdown .countdown_area .countdown_wrap .single_countdown {
+    text-align: center;
+}
+
+#countdown .countdown_area .countdown_wrap .single_countdown h3 {
+    font-size: 60px;
+}
+
+#countdown .countdown_area .countdown_wrap .single_countdown span {
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
+#ourStory {
+    background-image: url('../img/bg_love.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 200px;
+}
+
+.ourStory {
+    background-color: white;
+    border-radius: 50px;
+}
+
+.col-cover {
+    padding: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    object-fit: cover;
+}
+
+.col-story {
+    padding: 100px 50px;
+}
+
+#gallery {
+    background-color: #203C54;
+    color: white;
+    padding: 100px 50px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 6px;
+}
+
+.column img {
+    margin-top: 12px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+#rsvp {
+    background-image: url('../img/bg_rsvp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.row-attending {
+    background-color: #fff;
+    max-width: 600px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 10px;
+}
+
+.form-attending input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #70634c;
+    outline: none;
+    color: #70634c;
+}
+
+.form-attending .form-select {
+    background-image: url('../img/down-arrow.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    border: none;
+    border-bottom: 1px solid #70634c;
+    outline: none;
+    color: #70634c;
+}
+
+.form-attending input:focus, .form-attending .form-select:focus {
+    box-shadow: none;
+    color: #70634c;
+    border-bottom: 1px solid #70634c;
+}
+
+option:checked {
+    background-color: transparent;
+}
+
+.form-control:disabled, .form-control[readonly], .form-select:disabled {
+    background-color: transparent;
+}
+
+.btn-rsvp {
+    background-color: #b89050;
+    color: #fff;
+    margin: 30px 0;
+    border-radius: 25px;
+    padding: 2px 20px;
+}
+
+.btn-rsvp:hover {
+    background-color: transparent;
+    color: #b89050;
+    outline: auto;
+}
+
+#wishes {
+    background-image: url('../img/bg_wish.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wishes {
+    max-width: 600px;
+    background-color: white;
+    padding: 100px 20px 20px;
+}
+
+.form-wishes {
+    background-color: transparent;
+}
+
+.form-wishes h2 {
+    margin-bottom: 50px;
+    font-family: Prata;
+    font-size: 3.5rem;
+    color: #b89050;
+}
+
+.form-wishes input, .form-wishes textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #70634c;
+    outline: none;
+    color: #70634c;
+}
+
+.form-wishes input:focus, .form-wishes textarea:focus {
+    box-shadow: none;
+    color: #70634c;
+    border-bottom: 1px solid #70634c;
+    background-color: transparent;
+}
+
+#data-wishes {
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.card-body span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#attention {
+    padding: 100px 200px;
+    color: #3370a0;
+}
+
+#attention h1 {
+    color: #5b4025;
+}
+
+.protocol img {
+    width: 100px;
+    height: auto;
+}
+
+.protocol p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#hastag {
+    background: linear-gradient(to bottom, #212B34, #4879B1);
+    padding: 100px 200px;
+    color: white;
+    position: relative; /* Menambahkan posisi relative untuk penempatan absolut */
+}
+
+#stream h1, #filter h1 {
+    color: #70634c;
+    font-family: Prata;
+}
+
+#filter {
+    padding: 100px 200px;
+}
+.row-instagram{
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.ornamen {
+    position: absolute; /* Menggunakan posisi absolut untuk posisi yang tepat */
+    bottom: 0; /* Menempatkan di bagian paling bawah */
+    left: 50%; /* Menggeser ke tengah */
+    transform: translateX(-50%); /* Menggeser ke kiri sejauh setengah dari lebar sendiri */
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.up{
+    z-index: 1;
+    position: relative;
+}
+.btn-stream {
+    background-color: #203C54;
+    color: white;
+    border-color: #ffffff;
+    border-radius: 25px;
+    padding: 2px 20px;
+    
+}
+
+.btn-stream:hover {
+    background-color: white;
+    color: #203C54;
+    border-color: #203C54;
+}
+
+.gift-container{
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    position: relative;flex-direction: column;
+    flex: 1;
+}
+.gift-row{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    display: flex;
+}
+.pesan {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212B34;
+    background-image: url('/img/bordergift.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gift{
+    display: flex;
+    width: 100%;
+    background-color: #11160D;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.pesan h1 {
+    font-family: Prata;
+    font-size: 4rem;
+    color: #203C54;
+    text-shadow: -2px 2px rgb(255, 255, 255); /* Menambahkan bayangan pada teks */
+}
+
+
+.pesan h5 {
+    font-family: Prata;
+    color: white;
+}
+.item {
+    padding: 10%;
+}
+.gift-container label{
+    color: white;
+}
+
+.floating-nav {
+    position: fixed;
+    bottom: 20px;
+    /*Jarakdaribagianbawahlayar*/left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.nav-button {
+    background-color: #203C54; /* Warna tombol */
+    color: white; /* Warna teks */
+    border: none;
+    padding:20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #ffffff; /* Warna tombol saat hover */
+}
+.floating-music {
+    position: fixed;
+    bottom: 10%; /* Jarak dari bagian bawah layar */
+    right: 1%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    z-index: 1000;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+.music-btn {
+    background-color: transparent; /* Warna latar belakang tombol */
+    color: white; /* Warna teks */
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-image 0.5s; /* Transisi untuk perubahan gambar latar belakang */
+    animation: rotate 2s linear infinite; /* Animasi putar */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M14 10h-2v12h2zm6 0h-2v12h2z'/%3E%3Cpath fill='white' d='M16 4A12 12 0 1 1 4 16A12 12 0 0 1 16 4m0-2a14 14 0 1 0 14 14A14 14 0 0 0 16 2'/%3E%3C/svg%3E"); /* Gambar latar belakang tombol */
+    background-size: cover;
+}
+
+.music-btn.paused {
+    animation-play-state: paused; /* Hentikan animasi saat dijeda */
+}
+
+.music-btn:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M14 10h-2v12h2zm6 0h-2v12h2z'/%3E%3Cpath fill='white' d='M16 4A12 12 0 1 1 4 16A12 12 0 0 1 16 4m0-2a14 14 0 1 0 14 14A14 14 0 0 0 16 2'/%3E%3C/svg%3E"); /* Gambar latar belakang saat hover */
+}
+
+.popup1 {
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.popup1 span{
+    position: relative;
+    right: 50%;
+    bottom: 50%;
+    height: auto;
+    
+}
+.popup-show {
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.overlay-show {
+    display: block;
+}
+
+.close-overlay {
+    cursor: pointer;
+    color: #333;
+    float: right;
+    font-size: 20px;
+}
+
+.popup-column{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+}
+.popup-column h4{
+    font-size: 20px;
+}
+.popup-container{
+    position: relative;
+    top: 10px;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    background-color: #CADDCE;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    left: 10px;
+}
+.popup-container h4{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+.popup-column-bawah{
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.popup-row{
+    margin: 10px;
+    padding: auto;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.popup-row img{
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+.popup-row h4{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popup-row h5{
+    text-align: center;
+    font-size: 18px;
+}
+.popup-column-bawah button{
+    background-color: #785327;
+    color: white;
+    border-radius: 10px;
+    font-family: "Prata",serif;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+}
+.popup-column-bawah button:hover{
+    background-color: #cab69e;
+}
+
+.scrolling-container{
+    display: flex;
+    overflow-x:auto ;
+    width: auto;
+    padding: 10px;
+    min-width: 80%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-y: hidden;
+    gap: 20px;
+}
+.scrolling-box{
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    min-width: 70%;
+    height: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5%;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    align-items: center;
+    left: 2%;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.scrolling-box h4{
+    font-size: 24px;
+    color: #203C54;
+}
+.scrolling-box h5{
+    padding-top: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+.hitam{
+    color: black;
+}
+
+.modal-title {
+    color: #70634c;
+}
+
+.modal-body {
+    color: #70634c;
+}
+
+.btn-gift {
+    border: 4px solid #203C54;
+    outline: none;
+    background-color: transparent;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+}
+
+.btn-gift img {
+    -webkit-animation: shake 1s infinite ease-in-out alternate;
+    /* Safari 4+ */
+    -moz-animation: shake 1s infinite ease-in-out alternate;
+    /* Fx 5+ */
+    -o-animation: shake 1s infinite ease-in-out alternate;
+    /* Opera 12+ */
+    animation: shake 1s infinite ease-in-out alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+#thank {
+    padding: 100px 200px;
+    background-image: url(/img/frame.png);
+    color: #ffffff;
+}
+
+#thank .name {
+    font-family: Tangerine;
+    font-size: 4rem;
+    color: #203C54;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+
+#thank .and-bawah {
+    padding: 2px 8px;
+    border-color: white !important;
+    font-family: Alice;
+    font-size: 2rem;
+}
+
+#menu {
+    padding: 100px 200px;
+    color: #dab878;
+    background-color: #0a0a0a;
+}
+
+#menu ul {
+    padding-left: 0;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #dab878;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

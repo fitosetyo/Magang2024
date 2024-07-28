@@ -1,0 +1,642 @@
+/* large */
+@media (min-width: 950px) and (max-width: 1024px) {
+
+    #ayat, #ourStory, #attention, #gift, #hastag, #filter, #thank, #saveDate, #menu, #stream {
+        padding: 50px 100px;
+    }
+
+    #wedding {
+        top: -12%;
+        z-index: 2;
+    }
+
+    #wedding h1 {
+        font-size: 110px;
+        margin: 48px 0px;
+    }
+
+    #saveDate::after {
+        background-size: 40px;
+    }
+
+    #wedding .text-center span {
+        font-size: 34px;
+    }
+
+    .text-invite {
+        font-size: 22px;
+    }
+
+    .wedding-content p {
+        font-size: 16px;
+    }
+
+    #gallery {
+        padding: 50px;
+    }
+
+    .form-wishes h2 {
+        margin-bottom: 32px;
+    }
+
+    #container-save {
+        padding-top: 560px;
+    }
+
+    .save-title h2, #gallery .header h1, .col-story h1, #gift h1, .form-wishes h2, .hastag {
+        font-size: 3rem;
+    }
+}
+
+/* medium */
+@media (min-width: 750px) and (max-width: 949px) {
+    #popup {
+        background-image: url('../img/popup-tablet.jpg');
+    }
+
+    #popup span {
+        font-size: 32px;
+    }
+
+    #popup .text-name {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    #popup .name {
+        font-size: 4rem;
+    }
+
+    #popup .invite {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    #popup .row {
+        max-width: 949px;
+    }
+
+    #popup .float-end {
+        float: none !important;
+    }
+
+    #popup .invite p {
+        font-size: 28px;
+    }
+
+    #popup .container-fluid {
+        position: absolute;
+        bottom: 10%;
+        padding: 100px 20px;
+    }
+
+    .btn-open {
+        font-size: 22px;
+    }
+
+    .header-content .name {
+        font-size: 5rem;
+    }
+
+    .header-content h2 {
+        font-size: 2rem;
+    }
+
+    .header-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .and {
+        padding: 0 7px;
+        font-size: 2.5rem;
+    }
+
+    #ayat, #attention, #gift, #thank, #ourStory, #hastag, #filter, #saveDate, #menu, #stream {
+        padding: 50px 100px;
+    }
+
+    #wedding {
+        top: -8%;
+    }
+
+    #wedding img {
+        width: 80%;
+        height: auto;
+    }
+
+    #wedding .text-center span {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    .text-invite {
+        font-size: 20px;
+    }
+
+    .wedding-content p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    #wedding h1 {
+        font-size: 80px;
+        margin: 40px 0;
+    }
+
+    #saveDate::after {
+        background-size: 350px;
+    }
+
+    .save-title h2, .col-story h1, #gift h1, .form-wishes h2 {
+        font-size: 2.5rem;
+    }
+
+    #gallery .header h1 {
+        font-size: 2rem;
+    }
+
+    .save-detail h5 {
+        font-size: 1.25rem;
+    }
+
+    .save-detail .day {
+        font-size: 16px;
+    }
+
+    .save-detail .time {
+        font-size: 16px;
+    }
+
+    .save-detail .line {
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+    .save-detail .place {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .save-detail .address {
+        font-size: 14px;
+    }
+
+    .btn-stream, .btn-map {
+        font-size: 14px;
+    }
+
+    #gallery {
+        padding: 50px;
+    }
+
+    #wishes .row-wishes {
+        padding: 0;
+    }
+
+    .wishes {
+        padding: 50px 30px 20px;
+    }
+
+    #stream h1 {
+        font-size: 28px;
+    }
+
+    #thank h1 {
+        font-size: 3rem;
+    }
+
+    #thank h3 {
+        font-size: 1.5rem;
+    }
+
+    #thank .and-bawah {
+        top: 60%;
+        left: 40%;
+    }
+}
+
+/* extra small */
+@media (max-width: 500px) {
+    #popup {
+        background-image: url('../img/popup-mobile.jpg');
+    }
+
+    #popup .name {
+        font-size: 4rem;
+    }
+
+    #popup h3 {
+        font-size: 1.5rem;
+    }
+
+    #popup .row {
+        max-width: 500px;
+    }
+
+    #popup .float-end {
+        float: none !important;
+    }
+
+    #popup .invite {
+        margin-top: 40px;
+    }
+
+    #popup .invite p {
+        font-size: 24px;
+    }
+
+    #popup .container-fluid {
+        position: absolute;
+        bottom: 10%;
+        padding: 70px 20px;
+    }
+
+    #popup span {
+        font-size: 20px;
+    }
+
+    #popup .invite p {
+        font-size: 22px;
+    }
+
+    .btn-open {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .header-content {
+        bottom: 15%;
+    }
+
+    .header-content h4 {
+        font-size: calc(1.275rem + .3vw);
+    }
+
+    .header-content .name {
+        font-size: 1rem;
+    }
+
+    .header-content h2 {
+        font-size: calc(1.325rem + .9vw);
+    }
+
+    .and {
+        padding: 0 5px;
+        font-size: 1.5rem;
+    }
+
+    #ayat {
+        font-size: 18px;
+        padding: 50px;
+    }
+
+    #wedding, #ourStory, #attention, #gallery, #stream, #saveDate, #gift, #hastag, #filter, #thank, #menu {
+        padding: 35px 20px;
+    }
+
+    #wedding {
+        top: -5%;
+    }
+
+    #wedding .text-center p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #wedding img {
+        width: 50%;
+        height: auto;
+    }
+
+    #wedding .text-center span {
+        font-size: 26px;
+        line-height: normal;
+    }
+
+    #wedding h1 {
+        font-size: 64px;
+        margin: 0 0 10px;
+    }
+
+    #saveDate::after {
+        background-size: 200px;
+    }
+
+    .save-title h2, #gallery .header h1, .col-story h1, #gift h1, .form-wishes h2 {
+        font-size: 2rem;
+    }
+
+    .save-detail h5 {
+        font-size: 18px;
+    }
+
+    .save-detail .place {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .save-detail .address {
+        font-size: 18px;
+    }
+
+    .btn-stream, .btn-map {
+        font-size: 14px;
+    }
+
+    #container-save {
+        padding-top: 750px;
+    }
+
+    #countdown .countdown_area {
+        padding: 30px 0;
+    }
+
+    #countdown .countdown_area .countdown_wrap {
+        padding: 0 !important;
+    }
+
+    #countdown .countdown_area .countdown_wrap .single_countdown h3 {
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+
+    #countdown .countdown_area .countdown_wrap .single_countdown span {
+        font-size: 22px;
+    }
+
+    #gallery .header {
+        padding-bottom: 0;
+    }
+
+    #gallery .header h1, #gallery .header p {
+        text-align: center;
+    }
+
+    .col-cover {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 0;
+    }
+
+    .col-story {
+        padding: 50px;
+    }
+
+    .col-story p {
+        text-align: justify;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #rsvp {
+        height: 500px;
+    }
+
+    .attending-header {
+        padding: 0 20px;
+    }
+
+    .attending-header span {
+        font-size: 14px;
+    }
+
+    .attending-header h3 {
+        font-size: 20px;
+    }
+
+    .attending-header p {
+        font-size: 12px;
+    }
+
+    .btn-rsvp {
+        margin: 20px 0 5px;
+    }
+
+    #wishes .row-wishes {
+        padding: 0;
+    }
+
+    .form-wishes h2 {
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+
+    #gift p, #hastag p, #filter p {
+        font-size: 14px;
+    }
+
+    .wishes {
+        padding: 50px 20px 20px;
+    }
+
+    .btn-prev, .btn-next {
+        width: 32px;
+        height: 32px;
+    }
+
+    .btn-prev {
+        left: -6%;
+    }
+
+    .btn-next {
+        right: -6%;
+    }
+
+    #attention .col {
+        margin-top: 1rem !important;
+        margin-bottom: 0 !important;
+        display: block !important;
+    }
+
+    .protocol {
+        text-align: center;
+    }
+
+    .protocol img {
+        width: 40%;
+        height: auto;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    #stream h1, #hastag h1, #filter h1 {
+        font-size: 2rem;
+    }
+
+    #thank .name {
+        font-size: 3rem;
+    }
+
+    #thank .and-bawah {
+        padding: 2px 6px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-width: 950px) and (max-width: 1024px) {
+    #popup {
+        background-image: url('../img/popup-tablet.jpg');
+    }
+
+    #popup .text-name {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    #popup .container-fluid {
+        position: absolute;
+        bottom: 20%;
+        padding: 80px 20px;
+    }
+
+    #popup .row {
+        max-width: 1000px;
+    }
+
+    #popup .float-end {
+        float: none !important;
+    }
+
+    #popup .invite {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    #popup .nickname {
+        font-size: 180px;
+    }
+
+    #popup span {
+        font-size: 38px;
+    }
+
+    #popup .invite p {
+        font-size: 34px;
+    }
+
+    .btn-open {
+        font-size: 24px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 750px) and (max-width: 949px) {
+    #popup {
+        background-image: url('../img/popup-landscape.jpg');
+        background-position: left top;
+    }
+
+    #popup .float-end {
+        float: right !important;
+    }
+
+    #popup .container-fluid {
+        padding: 75px 20px;
+    }
+
+    #popup .row {
+        max-width: 400px;
+    }
+
+
+    #popup h1 {
+        font-size: 2.5rem;
+    }
+
+    #popup h3 {
+        font-size: 1.2rem;
+    }
+
+    #popup h4 {
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+
+    #popup .text-name {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    #popup .invite {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    #popup span {
+        font-size: 16px;
+    }
+
+    #popup .invite p {
+        font-size: 16px;
+    } 
+
+    .btn-open {
+        font-size: 12px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width:499px) and (max-width: 749px) {
+    #popup {
+        background-image: url('../img/popup-landscape.jpg');
+        background-position: left top;
+    }
+
+    #popup .float-end {
+        float: right !important;
+    }
+
+    #popup .container-fluid {
+        padding: 30px 20px;
+    }
+
+    #popup .row {
+        max-width: 300px;
+    }
+
+
+    #popup .and {
+        top: 38%;
+        left: 33%;
+        padding: 0 3px;
+    }
+
+    #popup h1 {
+        font-size: 2.3rem;
+    }
+
+    #popup h3 {
+        font-size: 1rem;
+    }
+
+    #popup h4 {
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+
+    #popup .text-name {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    #popup .invite {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    #popup span {
+        font-size: 14px;
+    }
+
+    #popup .invite p {
+        font-size: 14px;
+    }
+
+    .btn-open {
+        font-size: 12px;
+        padding: 2px 10px;
+    }
+}
